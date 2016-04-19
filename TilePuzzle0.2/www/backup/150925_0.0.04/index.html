@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/tiles.css">
+    <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.2.min.css">
+  </head>
+  <body>
+    
+    <div id="title"><h1>TILE PUZZLE</h1></div>
+
+    <!-- Selecteur de map -->
+    <div id="map"></div>
+
+    <!-- Jeu -->
+    <canvas id="puzzle" width="1000" height="1000"></canvas>
+
+    <!-- Menu -->
+    <div id="selectMenu" class="menu">
+    	<div class="menuSbutton terrain"><p class="menubtnct">MAP</p></div>
+    	<div class="menuSbutton nbt" val="3"><p class="menubtnct">9</p></div>
+    	<div class="menuSbutton nbt" val="4"><p class="menubtnct">16</p></div>
+    	<div class="menuSbutton nbt" val="5"><p class="menubtnct">25</p></div>
+    	<div class="menuSbutton lvl"><p class="menubtnct">LVL</p></div>
+    </div>
+
+    <div id="gameMenu" class="menu">
+    	<div class="menuGbutton again"><p class="menubtnct">Restart</p></div>
+    	<div class="menuGbutton back"><p class="menubtnct">Abort</p></div>
+    </div>
+
+<!--
+    <div style="width: 50%; float: left; margin-left:5%;" >     
+	    <div id="slider">
+	      <form>
+	        <h3 class="menu" style="color:#FFFFFF;">Easy <input type="range" id="scale" value="3" min="2" max="6" step="1"> Hard</h3>
+	      </form>
+	    </div> 
+	</div>
+    <div style="margin-left: 45%;" > 
+    	<button id="butstart">LET'S START</button> 
+    </div>
+-->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <script type="text/javascript" src="mapInit.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBLyG2vLX7J3W15PrgKz6zTdjFlcQ1d8&callback=initMap"
+        async defer>
+    </script>
+
+    <script src="jquery-2.1.4.min.js"></script>
+
+    <!--<script src="jquery.mobile-1.4.2.js"></script>-->
+    <script src="tilegame.js"></script>
+
+  </body>
+</html>

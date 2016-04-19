@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/tiles.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+  </head>
+  <body>
+    
+
+    <div id="title"><h1>TILE PUZZLE</h1></div>
+
+    <!-- Selecteur de map -->
+    <div id="map"></div>
+
+    <!-- Jeu -->
+    <canvas id="puzzle" width="1000" height="1000"></canvas>
+
+    <!-- Menu -->
+    <div id="selectMenu" class="menu">
+    	<div class="menuSbutton terrain"><img src="img/map.png" class="menuimg"></div>
+    	<div class="menuSbutton"><img src="img/mode.png" class="menuimg"></div>
+    	<div class="menuSbutton"><p class="menubtnct menucircle">EASY</p></div>
+    	<div class="menuSbutton"><p class="menubtnct">LVL 4</p></div>
+    	<div class="menuSbutton start"><img src="img/start.png" class="menuimg"></p></div>
+    </div>
+
+    <div id="gameMenu" class="menu">
+    	<div class="menuGbutton again"><p class="menubtnct">Restart</p></div>
+    	<div class="menuGbutton back"><p class="menubtnct">Abort</p></div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <script type="text/javascript" src="js/mapInit.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMBLyG2vLX7J3W15PrgKz6zTdjFlcQ1d8&callback=initMap"
+        async defer>
+    </script>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+    <!--<script src="js/jquery.mobile-1.4.2.js"></script>-->
+    <script src="js/tilegame.js"></script>
+
+  </body>
+</html>

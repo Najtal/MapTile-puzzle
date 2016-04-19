@@ -1,0 +1,138 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+#map {
+  height: 80%;
+  width: 100%;
+}
+#puzzle {
+  position: relative;
+  background-color:black;
+}
+#footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  height:10%;
+  width:100%;
+  text-align:center; 
+  background:green;
+}
+
+#title{
+  width:100%; 
+  height:10%;   
+  display:flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #363636;
+}
+
+h2 {
+  color: #222222;
+}
+
+#tmenu{
+  position:relative;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  vertical-align: center;
+}
+
+.menuSbutton {
+  float: left;
+  height: 100%;
+  width: 25%;
+  padding:0px;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  /*min-width: 20px;*/
+}
+
+.menuGbutton {
+  float: left;
+  height: 98%;
+  width: 50%;
+  padding: 0px;
+  margin-left: -2px;
+  border-style: solid;
+  border-width: 0 2px 0 0;
+  border-color: #DDDDDD;
+}
+
+#gameMenu {
+  display: none;
+}
+
+.menubtnct {
+  /*color: #222222; 
+  font-family: 'Lato', sans-serif;
+  margin-left: auto;
+  margin-right: auto;*/
+  text-align: center;
+  /*vertical-align: middle;*/
+  text-indent: 0;
+}
+
+.menuimg {
+  max-height: 100%;
+}
+
+.ui-popup-container, .ui-popup {
+    height: 98%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+
+/*
+.menucircle {
+    border-radius: 50%;
+    height: 80%;
+    padding: 8px;
+    
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    
+    font: 32px Arial, sans-serif;
+}*/
+
+
+
+h1 { color: #DFDFDF; font-family: 'Lato', sans-serif; font-size: 30px; font-weight: 300; line-height: 30px; margin-left: 10%;}
+
+p { color: #333333; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; line-height: 26px; text-indent: 30px; margin: 0; }
+
+a { color: #222222; text-decoration: underline; }
+
+
+
+
+/*======= Map Styling ============*/
+.gmnoprint a, .gmnoprint span {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+#GMapsID div div a div img{
+    display:none;
+}
